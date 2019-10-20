@@ -21,8 +21,6 @@ export class LoginComponent implements OnInit {
     this.userService.login(this.user).subscribe(response => {
       this.router.navigateByUrl('dashboard');
       // tslint:disable-next-line:no-shadowed-variable
-    }, error => {
-      console.log(error);
       this.router.navigateByUrl('dashboard');
 
     });
