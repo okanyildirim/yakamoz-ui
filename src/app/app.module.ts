@@ -12,6 +12,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import {MainModule} from './main/main.module';
 import {AuthModule} from './auth/auth.module';
+// import {ToastModule} from 'primeng/toast';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,7 @@ import {AuthModule} from './auth/auth.module';
     MainModule,
     AuthModule,
     NgbModule.forRoot(),
-    FormsModule
+   // ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent],
