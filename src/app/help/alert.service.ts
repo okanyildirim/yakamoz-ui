@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Router, NavigationStart } from '@angular/router';
+/*import { Router, NavigationStart } from '@angular/router';
 import { Observable, Subject } from 'rxjs';
-import { MessageService } from 'primeng/primeng';
+import { MessageService } from 'primeng/primeng';*/
 
 
 @Injectable({
@@ -19,7 +19,7 @@ export class AlertService {
                 if (this.keepAfterNavigationChange) {
                     // only keep for a single location change
                     this.keepAfterNavigationChange = false;
-                }  
+                }
             }
         });
     }
@@ -28,7 +28,7 @@ export class AlertService {
         this.keepAfterNavigationChange = keepAfterNavigationChange;
         this.subject.next({ type: 'success', text: message });
     }
- 
+
     error(message: string, keepAfterNavigationChange = false) {
         this.keepAfterNavigationChange = keepAfterNavigationChange;
         this.subject.next({ type: 'error', text: message });
@@ -42,7 +42,6 @@ export class AlertService {
     getMessage(): Observable<any> {
         return this.subject.asObservable();
     }
-
 */
 
 }
