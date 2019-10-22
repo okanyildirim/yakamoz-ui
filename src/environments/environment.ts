@@ -5,7 +5,7 @@
 export const environment = {
   AUTH_HOST: ' http://localhost:8060/',
   CMS_HOST: ' http://localhost:8070/',
-
+  CMS_API: '/cms-api',
   production: false
 };
 

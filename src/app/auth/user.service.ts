@@ -9,7 +9,7 @@ import {Observable} from 'rxjs';
 })
 export class UserService {
 
-  userUrl = environment.AUTH_HOST + 'auth/users';
+  userUrl = environment.CMS_HOST + environment.CMS_API + '/cms-users';
   constructor(private http: HttpClient) { }
 
   register(userRegistrationRequest: User): Observable<any> {

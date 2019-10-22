@@ -19,10 +19,13 @@ export class LoginComponent implements OnInit {
 
   login() {
     this.userService.login(this.user).subscribe(response => {
-      this.router.navigateByUrl('dashboard');
-      // tslint:disable-next-line:no-shadowed-variable
-      this.router.navigateByUrl('dashboard');
-
+      if (response) {
+        this.router.navigateByUrl('dashboard');
+      } else {
+        alert('Parola ve ya email yanlış gardaş');
+      }
+    }, error1 => {
+      alert('http error');
     });
   }
 }

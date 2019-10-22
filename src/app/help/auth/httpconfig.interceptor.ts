@@ -9,11 +9,7 @@ import {
     HttpErrorResponse
 } from '@angular/common/http';
 import { Observable, observable } from 'rxjs';
-import { Router } from '@angular/router';
-import { map, catchError } from 'rxjs/operators';
-import {  throwError } from 'rxjs';
-import { AlertService } from '../main/alert.service';
-import { AuthService } from './auth.service';
+
 
 @Injectable()
 export class TokenInterceptor implements HttpInterceptor {
